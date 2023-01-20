@@ -6,4 +6,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - run: echo "inside the yaml script"
+      - run: mkdir newDir
