@@ -8,6 +8,8 @@ jobs:
           EVENT_CONTEXT: ${{ toJSON(github.event) }}
         run: |
           echo $EVENT_CONTEXT
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner.
       - name: Set up Python 3.7
         uses: actions/setup-python@v3
         with:
