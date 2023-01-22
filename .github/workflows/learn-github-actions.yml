@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: TestWorkflow
         uses: actions/checkout@v3
-        uses: actions/setup-node@v3
+        #uses: actions/setup-node@v3
         env:
           EVENT_CONTEXT: ${{ toJSON(github.event) }}
         run: |
