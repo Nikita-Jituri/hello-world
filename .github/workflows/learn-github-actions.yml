@@ -20,6 +20,7 @@ jobs:
           pip install PyGithub
       - name: execute py script # run the run.py to get the latest data
         run: |
+          ls -ltr
           python ./scripts/testpython.py
       - name: Display the path
         run: |
