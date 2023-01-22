@@ -18,4 +18,10 @@ jobs:
           pip install PyGithub
       - name: Run a python script
         run: |
-          python ../scripts/testpython.py
+          python test.py
+      - name: Display the path
+        run: |
+          import os
+          print(os.environ['PATH'])
+          print("Helloworld")
+        shell: python
