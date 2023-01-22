@@ -21,7 +21,7 @@ jobs:
       - name: execute py script # run the run.py to get the latest data
         run: |
           ls -ltr
-          python ./scripts/testpython.py
+          python testpython.py
       - name: Display the path
         run: |
           import os
