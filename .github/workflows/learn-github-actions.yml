@@ -9,7 +9,7 @@ jobs:
         run: |
           echo $EVENT_CONTEXT
       - name: Set up Python 3.7
-        uses: actions/setup-python@v16
+        uses: actions/setup-python@v3
         with:
           python-version: 3.7
       - name: Install dependencies
