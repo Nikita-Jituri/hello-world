@@ -5,14 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: TestWorkflow
-          uses: actions/checkout@v3
-          uses: actions/setup-node@v3
-          env:
-            EVENT_CONTEXT: ${{ toJSON(github.event) }}
-          run: |
-            echo $EVENT_CONTEXT
-            echo ${{ EVENT_CONTEXT }}
-            echo "$ECHO_CONTEXT"
-            echo ${{ github.repository }}
-            echo ${{ github.event.pull_request.number }}
-            echo ${{ github.event }}
+        uses: actions/checkout@v3
+        uses: actions/setup-node@v3
+        env:
+          EVENT_CONTEXT: ${{ toJSON(github.event) }}
+        run: |
+          echo $EVENT_CONTEXT
+          echo ${{ EVENT_CONTEXT }}
+          echo "$ECHO_CONTEXT"
+          echo ${{ github.repository }}
+          echo ${{ github.event.pull_request.number }}
+          echo ${{ github.event }}
