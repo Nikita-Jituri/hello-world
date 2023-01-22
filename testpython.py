@@ -2,7 +2,7 @@ from github import Github
 
 print("hello world - inside python script")
 
-g = Github(base_url="https://github.com/api/v3", login_or_token="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")
+g = Github(base_url="https://github.com/api/v3", login_or_token="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")
 
 repo = g.get_user().get_repo("hello-world")
 print(repo.full_name)
